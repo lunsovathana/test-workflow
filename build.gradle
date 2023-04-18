@@ -14,7 +14,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    compile group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '5.2'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.springframework.boot:spring-boot-starter-web' // for web development
+    implementation 'net.logstash.logback:logstash-logback-encoder:6.6' // for Logstash integration
+    testImplementation 'org.springframework.boot:spring-boot-starter-test' // for testing
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0' // for JUnit 5 testing
 }
